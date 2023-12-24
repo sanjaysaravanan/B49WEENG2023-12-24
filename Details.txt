@@ -1,0 +1,104 @@
+
+Topics:
+  
+  2. FSD Demo - Full Stack Development Demo
+
+    Simple Instagram or Facebook application
+
+    ** Think Twice before starting the Coding **
+
+      Front-End -> Use AI ( ChatGPT 3.5 ) to generate codes
+        HTML, CSS, Js, React, CSS Modules, Bootstrap, redux
+
+        Pages:
+
+          /login --> login form & link to register - Done
+
+          /register --> register form & a link to login - DOne
+
+          / --> all the posts from other users ( not the logged user )
+            posts should be in proper dimensions
+            and scroll to see other posts
+
+          /profile-account --> Details about the logged in user
+            Profile Pic, Id, email, phone, bio
+            Also, give option to edit the details
+          
+          /peoples --> list all the users except the logged in user
+
+          /my-posts --> list all the posts of an user 
+            edit, delete any of his posts
+
+      Backend:
+        NodeJS, Express, MongoDB, Mongoose, CORS, middlewares
+
+        APIs:
+
+          /login --> POST - Log-in a user into the system
+            verify the user creds
+ 
+          /register --> POST - Register a user into the system
+
+          /users
+            POST - Create a new user in the system
+            GET - get all the users of the system
+            /:id --> GET - get one single user of the system
+            /:id --> PUT - update one single user of the system
+            /:id --> DELETE - delete one single user of the system
+            
+          /posts
+            POST --> create a new post
+            GET --> get all the posts of the system
+              not the posts of the user logged in
+            /posts?userId=<userId> - GET - get the posts of the user
+            /:postId - GET - get a single post of the system
+
+      DB:
+
+        ER --> Entity Relationship
+          1. what are all the entities
+          2. how are they related to each other
+
+        Modelling or Schema :
+
+          users:
+            id
+            username
+            email
+            isVerified
+            profilepic
+            phone
+            bio
+          
+          posts: NoSQL
+            id
+            caption
+            imageUrl
+            likes
+            userDetails: {
+              id,
+              username,
+              profilepic,
+            }
+          
+        SQL, NoSQL, 
+
+
+  FSD Development:
+  
+    Write down the simple designs for both FE & BE along with DB.
+
+      Step 1:
+        implement the basic UI Design
+        along with mocked json
+      
+      Step 2:
+        Write down all the apis needed
+      
+      Step 3:
+        Wire the apis along with the FE
+      
+      Step 4:
+        Handling Errors
+
+
